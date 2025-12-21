@@ -1,6 +1,6 @@
 # Sanqian Browser - Privacy Policy
 
-**Last Updated: December 21, 2024**
+**Last Updated: December 21, 2025**
 
 ## Introduction
 
