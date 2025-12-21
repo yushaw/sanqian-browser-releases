@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sanqian Browser - Marquee (1400x560)</title>
+    <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica', 'Arial', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: #f0f0f0;
+            padding: 20px;
+        }
+
+        .promo-container {
+            width: 1400px;
+            height: 560px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 20px;
+            box-shadow: 0 30px 80px rgba(0, 0, 0, 0.3);
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            align-items: center;
+            padding: 80px;
+            position: relative;
+            overflow: hidden;
+            gap: 60px;
+        }
+
+        /* Decorative elements */
+        .promo-container::before {
+            content: '';
+            position: absolute;
+            width: 500px;
+            height: 500px;
+            background: rgba(255, 255, 255, 0.08);
+            border-radius: 50%;
+            top: -250px;
+            right: -250px;
+        }
+
+        .promo-container::after {
+            content: '';
+            position: absolute;
+            width: 400px;
+            height: 400px;
+            background: rgba(255, 255, 255, 0.08);
+            border-radius: 50%;
+            bottom: -200px;
+            left: -200px;
+        }
+
+        .left-section {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            z-index: 1;
+        }
+
+        .icon {
+            width: 100px;
+            height: 100px;
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 22px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 60px;
+            margin-bottom: 30px;
+            box-shadow: 0 12px 40px rgba(0, 0, 0, 0.25);
+        }
+
+        .title {
+            color: white;
+            font-size: 56px;
+            font-weight: 700;
+            margin-bottom: 16px;
+            text-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .tagline {
+            color: rgba(255, 255, 255, 0.95);
+            font-size: 26px;
+            font-weight: 500;
+            margin-bottom: 30px;
+            letter-spacing: 0.5px;
+        }
+
+        .description {
+            color: rgba(255, 255, 255, 0.85);
+            font-size: 16px;
+            line-height: 1.6;
+            margin-bottom: 24px;
+        }
+
+        .providers {
+            color: rgba(255, 255, 255, 0.9);
+            font-size: 14px;
+            font-weight: 400;
+            letter-spacing: 0.5px;
+        }
+
+        .right-section {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            z-index: 1;
+        }
+
+        .feature-card {
+            background: rgba(255, 255, 255, 0.15);
+            padding: 24px;
+            border-radius: 16px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .feature-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 8px;
+        }
+
+        .feature-icon {
+            font-size: 28px;
+            margin-right: 12px;
+        }
+
+        .feature-title {
+            color: white;
+            font-size: 20px;
+            font-weight: 600;
+        }
+
+        .feature-description {
+            color: rgba(255, 255, 255, 0.85);
+            font-size: 14px;
+            line-height: 1.5;
+        }
+
+        .instructions {
+            margin-top: 30px;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            max-width: 1400px;
+        }
+
+        .instructions h2 {
+            font-size: 18px;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .instructions ol {
+            padding-left: 20px;
+            color: #666;
+            line-height: 1.8;
+        }
+
+        .instructions code {
+            background: #f5f5f5;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-family: 'Courier New', monospace;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div class="promo-container">
+            <div class="left-section">
+                <div class="icon"><img src="logo.svg" alt="Sanqian Browser"></div>
+                <div class="title">Sanqian Browser</div>
+                <div class="tagline">AI-Powered Web Automation</div>
+                <div class="description">
+                    Automate web tasks with natural language. Multi-agent system supporting OpenAI, Claude, Gemini, and local models.
+                </div>
+                    OpenAI • Anthropic Claude • Google Gemini • Ollama • Custom Providers
+                </div>
+            </div>
+
+            <div class="right-section">
+                <div class="feature-card">
+                    <div class="feature-header">
+                        <span class="feature-icon">✨</span>
+                        <span class="feature-title">Multi-Agent System</span>
+                    </div>
+                    <div class="feature-description">
+                        Specialized AI agents collaborate to accomplish complex web workflows
+                    </div>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-header">
+                        <span class="feature-icon">🔒</span>
+                        <span class="feature-title">Privacy-Focused</span>
+                    </div>
+                    <div class="feature-description">
+                        Everything runs locally in your browser. Your credentials stay with you.
+                    </div>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-header">
+                        <span class="feature-icon">⚡</span>
+                        <span class="feature-title">Flexible LLM Support</span>
+                    </div>
+                    <div class="feature-description">
+                        Choose your preferred LLM provider or run models locally with Ollama
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="instructions">
+            <h2>📸 如何截图保存：</h2>
+            <ol>
+                <li>按 <code>Cmd + Shift + 4</code> (macOS) 或 <code>Win + Shift + S</code> (Windows)</li>
+                <li>精确选择紫色方框区域 (1400x560)</li>
+                <li>保存为 <code>marquee-1400x560.png</code></li>
+                <li>移动到 <code>promotional/</code> 目录</li>
+            </ol>
+            <p style="margin-top: 10px; color: #999; font-size: 12px;">
+                💡 提示：这个是可选的，在特色推荐的 Hero Banner 位置会用到
+            </p>
+        </div>
+    </div>
+</body>
+</html>
