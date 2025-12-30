@@ -16,7 +16,7 @@ The easiest way to install Sanqian Browser. Automatic updates included.
 
 ### Manual Installation
 
-1. Download `sanqian-browser-v0.0.1.zip` from the [Releases](https://github.com/yushaw/sanqian-browser-releases/releases) page
+1. Download zip from the [Releases](https://github.com/yushaw/sanqian-browser-releases/releases) page
 2. Unzip the file
 3. Open Chrome and navigate to `chrome://extensions/`
 4. Enable "Developer mode" (toggle in top-right corner)
@@ -40,7 +40,7 @@ Sanqian Browser requires a local backend service to function. You have two optio
 
 ### Setup
 
-1. **Start the backend service** (port 38765)
+1. **Start the backend service**
 2. **Install the Chrome extension** (see Download section above)
 3. **Configure API keys:**
    - Click the extension icon
@@ -99,27 +99,6 @@ Read our full [Privacy Policy](./PRIVACY.md).
 - **Issues & Bug Reports:** [github.com/yushaw/sanqian-browser/issues](https://github.com/yushaw/sanqian-browser/issues)
 - **Discussions:** [github.com/yushaw/sanqian-browser/discussions](https://github.com/yushaw/sanqian-browser/discussions)
 - **Security:** [github.com/yushaw/sanqian-browser/security](https://github.com/yushaw/sanqian-browser/security)
-
----
-
-## 📝 Release Notes
-
-### v0.0.1 - Initial Release (2025-12-22)
-
-**Features:**
-- Multi-agent AI system (Planner, Navigator, Validator)
-- Support for multiple LLM providers
-- Intuitive chat interface in side panel
-- Web automation via Chrome DevTools Protocol
-- Local-first privacy architecture
-- Open source under Apache 2.0 license
-
-**Supported LLM Providers:**
-- OpenAI (GPT-4, GPT-4o, GPT-4o-mini)
-- Anthropic (Claude Sonnet, Claude Haiku)
-- Google Gemini (Gemini Pro, Gemini Flash)
-- Ollama (local models)
-- Groq, Cerebras, LLaMA, and custom OpenAI-compatible providers
 
 ---
 
