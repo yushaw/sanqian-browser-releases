@@ -10,13 +10,11 @@ Official release repository for Sanqian Browser Chrome Extension.
 
 ### Chrome Web Store (Recommended)
 
-🔗 **[Install from Chrome Web Store](#)** *(Coming Soon - Under Review)*
+🔗 [Install from Chrome Web Store](https://chromewebstore.google.com/detail/sanqian/dophlkkpkjcbjbpmmaojefcffbjhjaen)
 
 The easiest way to install Sanqian Browser. Automatic updates included.
 
 ### Manual Installation
-
-**Latest Release:** [v0.0.1](https://github.com/yushaw/sanqian-browser-releases/releases/tag/v0.0.1)
 
 1. Download `sanqian-browser-v0.0.1.zip` from the [Releases](https://github.com/yushaw/sanqian-browser-releases/releases) page
 2. Unzip the file
